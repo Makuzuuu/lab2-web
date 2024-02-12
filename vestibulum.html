@@ -2,73 +2,114 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makuzuu</title>
-  
-  <style>
-    body {
-      background-color: #698B98;
-      margin: 0; 
-      padding: 0; 
-    }
-  
-    header {
-      text-align: center;
-      padding: 20px;
-      align-items: flex-end;
-      background-color: #2B3542; 
-      color: #fff; 
-      margin: 0;
-      height: 70px; /* Adjusted height */
-    }
-  
-    #home, #homeii, #homeiii, #homeiv {
-      text-align: center;
-      margin: 0 10px; 
-      font-family: 'Dosis';
-      font-size: 25px;
-    }
-    
-    .flex-container {
-      display: flex;
-      justify-content: right; /* Centering the items */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makuzuu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
-    .intro {
-      text-align: center;
-	  margin-right:350px;
-	  margin-top: 150px;
-	  font-family: 'Dosis', sans-serif;
-	  color: #2B3542; /* change to darker */
-    }
+    <style>
+        body {
+            background-color: #698B98;
+            margin: 0;
+            padding: 0;
+        }
 
-    #name {
-    font-size: 80px;
-	margin-top: 1px;
-    }
-	
-	#get {
-	margin-bottom: -5px;
-	font-size: 50px;
-	}
-  </style>
+        header {
+            text-align: center;
+            padding: 20px;
+            align-items: flex-end;
+            background-color: #2B3542;
+            color: #fff;
+            margin: 0;
+            height: 70px;
+        }
+
+        #home,
+        #homeii,
+        #homeiii,
+        #homeiv {
+            text-align: center;
+            margin: 0 10px;
+            font-family: 'Dosis';
+            font-size: 25px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: right;
+        }
+
+        .intro {
+            text-align: center;
+			margin: 150px auto;
+            font-family: 'Fjalla One', sans-serif;
+            color: #2B3542;
+            width: 50%;
+        }
+
+        #name {
+            font-size: 80px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+
+        #get {
+            margin-bottom: -5px;
+            font-size: 50px;
+        }
+
+        #desc {
+            font-size: 23px;
+            margin-top: 1px;
+            font-family: 'Fjalla One', sans-serif;
+			margin-bottom: 100px;
+        }
+
+        .mypic {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .mypic img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2B3542;
+            color: #fff;
+            margin: 0;
+            height: 70px;
+        }
+
+        .contact {
+            font-family: 'Dosis';
+        }
+    </style>
 </head>
- 
+
 <body>
-  
-  <header class="flex-container">
-    <h1 id="home">Home</h1> 
-    <h1 id="homeii">Profile</h1>
-    <h1 id="homeiii">Gallery</h1>
-    <h1 id="homeiv">Value</h1> 
-  </header>
-   
-  <div class="intro">
-    <h3 id="get">Get to know me!</h3>
-    <h1 id="name">Sean Marcus Maglaque</h1>
-	<h5 id="desc"> lorem ispum <h5>
-  </div>
-   
-</body>
-</html>
+
+    <header class="flex-container">
+        <h1 id="home">Home</h1>
+        <h1 id="homeii">Hobbies</h1>
+        <h1 id="homeiii">Gallery</h1>
+        <h1 id="homeiv">Value</h1>
+    </header>
+
+    <div class="mypic">
+        <img src='imago/profileimg.jpg'>
+    </div>
+
+    <div class="intro">
+        <h3 id="get">Get to know me!</h3>
+        <h1 id="name">Sean Marcus Maglaque</h1>
+        <h5 id="desc"> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </h5>
+    </div>
+
+	</body>
+	</html>
