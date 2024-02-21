@@ -11,28 +11,110 @@
       background-color: #000000; 
       margin: 0; 
       padding: 0; 
-	  font-family: 'Inconsolata', monospace;
+      font-family: 'Inconsolata', monospace;
+      display: flex; /* Use flexbox */
+      align-items: center; /* Center vertically */
     }
     
-    .desc {
-	color:#0FFF00;
-	}
+    .desci {
+      color: #00FD26;
+      text-align: left;
+      margin-left: 20px; 
+    }
+
+    #pic {
+      width: 20%;
+      margin-top: 100px;
+      margin-left: 70px;
+    }
 	
-	#pic {
-	width: 20%;
-	margin-top:100px;
-	margin-left: 70px;
+	.ret {
+	 color: #00FD26;
+	 position: absolute; /* Position the element absolutely */
+	 top: 10px; 
+	 right: 20px;
+	}
+  
+	.gal {
+	 color: #00FD26;
+	 position: absolute; /* Position the element absolutely */
+	 top: 45px; 
+	 right: 20px;
 	}
   </style>
- 
 </head>
  
 <body>
- <img id="pic" src="imago/Odin.png" alt="My Vog profile">
+
+	<a href="vestibulum.html" class="ret">
+		<h3><--- RETURN </h3>
+	</a>
+	
+	  
+		<a href="gallery.html" class="gal" id="galleryLink">
+        <h3>Gallery</h3>
+		</a>
+	<script>
+	var isGalleryLinkClicked = false;
+
+	document.getElementById('galleryLink').addEventListener('click', function(event) {
+    isGalleryLinkClicked = true;
+    redirectToGallery(event);
+	});
+
+	function redirectToGallery(event) {
+    if (!isGalleryLinkClicked) {
+        event.preventDefault(); // Prevent the default action of the link
+    } else {
+        // Link was clicked, proceed to gallery.html
+    }
+	}
+
+	</script>
+	
+  <img id="pic" src="imago/Odin.png" alt="My Vog profile">
  
- <div class="desc">
- 
+  <div class="desci">
+    <h3>
+      <pre id="profileText">
+
+      CODENAME: ODIN
+      STATUS: ACTIVE
+      AFFILIATION/TEAM: VIPER OPERATIONS GROUP [V.O.G]
+      RANK: ADJUTANT LEADER
+      CLASS: MARKSMAN & ASSAULTER
+	  
+      WEAPONS: 
+      - COLT ARMORY M16A4
+      - ZENTICO ARMS. INTEGRAL SUPPRESSED AK-47
+
+      OPERATIONS:
+      ~AMBUSH TACTICS TRAINING
+      ~HIGH VALUED TARGET RESCUE MISSION
+      ~12 KM14 SITE TRAINING
+      ~ROOM CLEARING TRAINING
+    </h3>
   </div>
+   <script>
+    
+    const text = document.getElementById("profileText").innerText;
+    document.getElementById("profileText").innerText = "";
+
+ 
+    function typeWriter(text, i) {
+      if (i < text.length) {
+        document.getElementById("profileText").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(function() {
+          typeWriter(text, i);
+        }, 10); 
+      }
+    }
+
+ 
+    typeWriter(text, 0);
+  </script>
+ 
 </body>
 
 </html>
