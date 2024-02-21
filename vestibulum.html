@@ -180,40 +180,45 @@
 		 <div id="datetime"></div>
 
 			<script>
-				function updateTime() {
-            // Get current date and time
-				var now = new Date();
+				   function updateTime() {
+            
+            var now = new Date();
 
-            // Format time
-				var hours = now.getHours();
-				var minutes = now.getMinutes();
-				var seconds = now.getSeconds();
+            
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
 
-            // Format date
-				var day = now.getDate();
-				var month = now.getMonth(); // Months are zero-indexed
-				var year = now.getFullYear();
-	
-            // Get full name of month
-				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-				var monthName = months[month];
+            
+            var day = now.getDate();
+            var month = now.getMonth(); 
+            var year = now.getFullYear();
+            var dayOfWeek = now.getDay(); 
 
-            // Add leading zeros if necessary
-				hours = (hours < 10 ? "0" : "") + hours;
-				minutes = (minutes < 10 ? "0" : "") + minutes;
-				seconds = (seconds < 10 ? "0" : "") + seconds;
-				day = (day < 10 ? "0" : "") + day;
+            // Define arrays for months and days of the week
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-            // Display time and date
-				var dateTimeString = hours + ":" + minutes + ":" + seconds + " " + day + " " + monthName + " " + year;
-				document.getElementById("datetime").innerHTML = dateTimeString;
-				}
+            
+            var monthName = months[month];
+            var dayName = daysOfWeek[dayOfWeek];
 
-        // Update time every second
-			setInterval(updateTime, 1000);
+          
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+            day = (day < 10 ? "0" : "") + day;
 
-        // Initial call to display time immediately
-			updateTime();
+            
+            var dateTimeString = dayName + ", " + day + " " + monthName + " " + year + " " + hours + ":" + minutes + ":" + seconds;
+            document.getElementById("datetime").innerHTML = dateTimeString;
+        }
+
+        
+        setInterval(updateTime, 1000);
+
+        
+        updateTime();
     </script>
 		
 	
