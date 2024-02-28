@@ -92,17 +92,22 @@
 		#homeii{
 		color: #fff;
 		font-family: 'Fjalla One', sans-serif;
-		font-size: 25px;
+		font-size: 20px;
 		}
 		#home{
 		color: #fff;
 		font-family: 'Fjalla One', sans-serif;
-		font-size: 25px;
+		font-size: 20px;
 		}
 		#homeiii{
 		color: #fff;
 		font-family: 'Fjalla One', sans-serif;
-		font-size: 25px;
+		font-size: 20px;
+		}
+		#homeiv{
+		color: #fff;
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 20px;
 		}
 		
 		.con {
@@ -123,7 +128,7 @@
 			}
 		.logo,
 		.logoii {
-			display: inline-block; /* Display logos side by side */
+			display: inline-block;
 			vertical-align: middle; 
 			margin-right: 7px;
 		}
@@ -133,8 +138,14 @@
         
 		 #datetime {
             font-size: 14px;
-			margin-left: 1370px;
+			margin-left: 1360px;
 			font-family: 'Fjalla One', sans-serif;
+			
+		 #homeiv {
+		 color: #ffff;
+		 font-family: 'Fjalla One', sans-serif;
+		 font-size: 25px;
+		 }
 		
     </style>
 </head>
@@ -145,7 +156,7 @@
          <a href="vitae.html"><h1 id="home">Home</h1></a>
          <a href="hobby.html"><h1 id="homeii">Hobbies</h1></a>
          <a href=".html"><h1 id="homeiii">Interest</h1></a>
-        <h1 id="homeiv">Value</h1>
+		 <a href=".html"><h1 id="homeiv">Philosophy </h1></a>
     </header>
 
     <div class="mypic">
@@ -195,7 +206,6 @@
             var year = now.getFullYear();
             var dayOfWeek = now.getDay(); 
 
-            // Define arrays for months and days of the week
             var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 

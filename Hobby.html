@@ -51,10 +51,12 @@
 	</a>
 	
 	  
-		<a href="gallery.html" class="gal" id="galleryLink">
+		<a href="congeries.html" class="gal" id="galleryLink">
         <h3>Gallery</h3>
 		</a>
+		
 	<script>
+	// Boleean logic//
 	var isGalleryLinkClicked = false;
 
 	document.getElementById('galleryLink').addEventListener('click', function(event) {
@@ -69,6 +71,45 @@
         // Link was clicked, proceed to gallery.html
     }
 	}
+	// Define the profile object
+var profile = {
+  codename: "ODIN",
+  status: "ACTIVE",
+  affiliation: "VIPER OPERATIONS GROUP [V.O.G]",
+  rank: "ADJUTANT LEADER",
+  class: "MARKSMAN & ASSAULTER",
+  weapons: ["COLT ARMORY M16A4", "ZENTICO ARMS. INTEGRAL SUPPRESSED AK-47"],
+  operations: [
+    "AMBUSH TACTICS TRAINING",
+    "HIGH VALUED TARGET RESCUE MISSION",
+    "12 KM14 SITE TRAINING",
+    "ROOM CLEARING TRAINING"
+  ]
+};
+
+// Function to display profile information
+function displayProfile() {
+  var profileText = "";
+  profileText += "CODENAME: " + profile.codename + "\n";
+  profileText += "STATUS: " + profile.status + "\n";
+  profileText += "AFFILIATION/TEAM: " + profile.affiliation + "\n";
+  profileText += "RANK: " + profile.rank + "\n";
+  profileText += "CLASS: " + profile.class + "\n\n";
+  profileText += "WEAPONS:\n";
+  profile.weapons.forEach(function(weapon) {
+    profileText += "- " + weapon + "\n";
+  });
+  profileText += "\nOPERATIONS:\n";
+  profile.operations.forEach(function(operation) {
+    profileText += "~ " + operation + "\n";
+  });
+
+  // Log the profile text to the console
+  console.log(profileText);
+}
+
+// Call the displayProfile function
+displayProfile();
 
 	</script>
 	
