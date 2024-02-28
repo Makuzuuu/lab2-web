@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <style>
-			
-		body {
-		background-color: #000;
-		font-family: 'Inconsolata', monospace;
-		}
-		
+        body {
+            background-color: #000;
+            font-family: 'Inconsolata', monospace;
+        }
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -29,12 +28,30 @@
 
         .image-description {
             margin-top: 10px;
-			color: #00FD26;       
-			}
-			
-		#title {
-		color: #00FD26;
-		}
+            color: #00FD26;       
+        }
+        
+        #title {
+            color: #00FD26;
+        }
+        
+        #returnButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: #00FD26;
+            border: none;
+            padding: 0;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Inconsolata', monospace;
+      
+        }
+
+        #returnButton:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -51,5 +68,34 @@
         </div>
         <!-- Add more gallery items as needed -->
     </div>
+
+    <button id="returnButton">Return</button>
+    
+    <script>
+        class ReturnButton {
+            async handleClick() {
+                console.log("Button clicked");
+                await this.returnAction();
+                console.log("Return action completed");
+                // Redirect to Hobby.html
+                window.location.href = "Hobby.html";
+            }
+
+            async returnAction() {
+                // Simulating async operation with setTimeout
+                return new Promise(resolve => {
+                    resolve(); // Resolving immediately without delay
+                });
+            }
+        }
+
+        // Create an instance of the ReturnButton class
+        const returnButton = new ReturnButton();
+
+        // Add event listener to the button
+        document.getElementById('returnButton').addEventListener('click', async () => {
+            await returnButton.handleClick();
+        });
+    </script>
 </body>
 </html>
