@@ -33,6 +33,8 @@
         
         #title {
             color: #00FD26;
+			font-family: 'Inconsolata', monospace;
+			 font-size: 30px;
         }
         
         #returnButton {
@@ -43,20 +45,33 @@
             color: #00FD26;
             border: none;
             padding: 0;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
             font-family: 'Inconsolata', monospace;
-      
         }
 
         #returnButton:hover {
             text-decoration: underline;
         }
+
+        #classified {
+            color: #FF0000; 
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            display: none; 
+			font-family: 'Inconsolata', monospace;
+			
+        }
     </style>
 </head>
 <body>
-    <h1 id="title">Operation Photos</h1>
 
+	
+    <h1 id="title" onclick="displayClassified()">Operation Photos</h1>
+		 <!-- Display "CLASSIFIED" -->
+    <div id="classified">Action Shots </div>
     <div class="gallery">
         <div class="gallery-item">
             <img src="image1.jpg" alt="Image 1">
@@ -71,30 +86,16 @@
 
     <button id="returnButton">Return</button>
     
+   
+    
     <script>
-        class ReturnButton {
-            async handleClick() {
-                console.log("Button clicked");
-                await this.returnAction();
-                console.log("Return action completed");
-                // Redirect to Hobby.html
-                window.location.href = "Hobby.html";
-            }
-
-            async returnAction() {
-                // Simulating async operation with setTimeout
-                return new Promise(resolve => {
-                    resolve(); // Resolving immediately without delay
-                });
-            }
+		// HTML DOM ANIMATION//
+        function displayClassified() {
+            document.getElementById('classified').style.display = 'block';
         }
-
-        // Create an instance of the ReturnButton class
-        const returnButton = new ReturnButton();
-
-        // Add event listener to the button
-        document.getElementById('returnButton').addEventListener('click', async () => {
-            await returnButton.handleClick();
+		//FUMCTION//
+        document.getElementById('returnButton').addEventListener('click', function() {
+            window.location.href = "Hobby.html";
         });
     </script>
 </body>
