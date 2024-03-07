@@ -9,7 +9,7 @@
 
     <style>
         body {
-            background-color: #698B98;
+            background-color: #000000;
             margin: 0;
             padding: 0;
         }
@@ -18,21 +18,14 @@
             text-align: center;
             padding: 20px;
             align-items: flex-end;
-            background-color: #2B3542;
+            background-color: #000000;
             color: #fff;
             margin: 0;
             height: 70px;
+			border-bottom: 2px solid #fe5200;
         }
 
-        #home,
-        #homeii,
-        #homeiii,
-        #homeiv {
-            text-align: center;
-            margin: 0 10px;
-            font-family: 'Dosis';
-            font-size: 25px;
-        }
+ 
 
         .flex-container {
             display: flex;
@@ -41,18 +34,20 @@
 
         .intro {
             text-align: center;
-			margin: 150px auto;
+            margin: 150px auto;
             font-family: 'Fjalla One', sans-serif;
-            color: #2B3542;
+            color: #faf8f7;
             width: 50%;
-			margin-bottom: 70px;
-			margin-top: 10px;
+            margin-bottom: 70px;
+            margin-top: 10px;
+			text-shadow: 1px 0px 150px #fe5200;
         }
 
         #name {
             font-size: 80px;
             margin-top: 1px;
             margin-bottom: 1px;
+			
         }
 
         #get {
@@ -64,7 +59,7 @@
             font-size: 23px;
             margin-top: 1px;
             font-family: 'Fjalla One', sans-serif;
-			margin-bottom: 100px;
+            margin-bottom: 100px;
         }
 
         .mypic {
@@ -73,81 +68,123 @@
         }
 
         .mypic img {
-            width: 100%; 
-            height: auto; 
+            width: 100%;
+            height: auto;
         }
 
         footer {
             padding: 70px;
-            background-color: #2B3542;
+            background-color: #00000;
             color: #fff;
             margin: 0;
             height: 70px;
+			border-top: 2px solid #fe5200;
         }
 
         .contact {
             font-family: 'Dosis';
         }
-		
-		#homeii{
-		color: #fff;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 20px;
-		}
-		#home{
-		color: #fff;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 20px;
-		}
-		#homeiii{
-		color: #fff;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 20px;
-		}
-		#homeiv{
-		color: #fff;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 20px;
-		}
-		
-		.con {
-		color: #fffff;
-		margin-left: 0px;
-		font-family: 'Dosis';
-		}
-		
-		.logo img {
-			width: 45px; 
-			height: auto; 
-			}
-			
-		.logoii img {
-			width: 60px; 
-			height: auto;
-			
-			}
-		.logo,
-		.logoii {
-			display: inline-block;
-			vertical-align: middle; 
-			margin-right: 7px;
-		}
-		  header a {
+
+
+
+        .con {
+            color: #fffff;
+            margin-left: 0px;
+            font-family: 'Dosis';
+        }
+
+        .logo img {
+            width: 45px;
+            height: auto;
+        }
+
+        .logoii img {
+            width: 60px;
+            height: auto;
+
+        }
+
+        .logo,
+        .logoii {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 7px;
+        }
+
+        header a {
             text-decoration: none;
         }
-        
-		 #datetime {
-            font-size: 14px;
-			margin-left: 1360px;
-			font-family: 'Fjalla One', sans-serif;
-			
-		 #homeiv {
-		 color: #ffff;
-		 font-family: 'Fjalla One', sans-serif;
-		 font-size: 25px;
-		 }
-		 
 
+        #datetime {
+            font-size: 14px;
+            margin-left: 1300px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+		.container {
+           position: relative; 
+		}
+      .buttoni {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  border: 2px solid #00FD26;
+		  color: #00FD26;
+		  text-decoration: none;
+		  background-color: transparent;
+		  text-align: center;
+		  transition: background-color 0.3s, color 0.3s;
+		  cursor: pointer;
+		  position: absolute;
+		  top: 1400px;
+		  left: 600px;
+		  transform: translateY(-50%);
+		  width: 70px;
+		  height: 30px;
+		  font-size: 20px;
+		}
+
+		.buttoni:hover {
+		  background-color: #009688;
+		  color: #fff;
+		}
+		
+		#hobby-link {
+	color: #00FD26; /* Set the green color here */
+  }
+	.container {
+           position: relative; 
+		}
+      .buttonii {
+	   position: absolute; /* Make it absolute positioned */
+			top: 1400px; /* Adjust vertical position */
+			left: 900px;
+		  display: inline-block;
+		  padding: 10px 20px;
+		  border: 2px solid #00FD26;
+		  color: #00FD26;
+		  text-decoration: none;
+		  background-color: transparent;
+		  text-align: center;
+		  transition: background-color 0.3s, color 0.3s;
+		  cursor: pointer;
+		  transform: translateY(-50%);
+		  width: 70px;
+		  height: 30px;
+		  font-size: 20px;
+		  
+		}
+
+		.buttonii:hover {
+		  background-color: #009688;
+		  color: #fff;
+		}
+		
+		#forms-link {
+		color: #00FD26; /* Set the green color here */
+		}
+		
+		#wel {
+		margin-right: 1000px;
+		}
 		
     </style>
 </head>
@@ -155,10 +192,8 @@
 <body>
 
     <header class="flex-container">
-         <a href="vitae.html"><h1 id="home">Home</h1></a>
-         <a href="hobby.html"><h1 id="homeii">Hobbies</h1></a>
-         <a href=".html"><h1 id="homeiii">Interest</h1></a>
-		 <a href=".html"><h1 id="homeiv">Philosophy </h1></a>
+     <h1 id="wel"> WELCOME TO MY WEBSITE! </h1>
+	 
     </header>
 
     <div class="mypic">
@@ -168,73 +203,85 @@
     <div class="intro">
         <h3 id="get">Get to know me!</h3>
         <h1 id="name">Sean Marcus Maglaque</h1>
-        <h5 id="desc"> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </h5>
+        <h5 id="desc">
+            Hello there! I'm Sean, currently immersed in the world of IT studies at the collegiate level.<br>
+            With a knack for problem-solving and a penchant for all things tech-related, I'm always <br>
+            eager to explore the latest innovations in the field. Beyond bits and bytes, I'm also a history<br>
+            enthusiast with a deep-seated passion for theological discourse. My outgoing and cheerful <br>
+            demeanor makes me a natural when it comes to connecting with others and sharing my <br>
+            enthusiasm for both the past and the future. </h5>
+
+       
     </div>
+
+
+	<a href="hobby.html" class="buttoni" id="hobby-link">Hobby</a>
+
+	<a href="forms.php" class="buttonii" id="forms-link">Visitor</a>
 	
-	<footer>
-		<div class="con">
-		<h2> Contact me </h3>
-		</div>
-		
-		<div class="logo">
-		<a href="https://www.facebook.com/seanmarcus.maglaque/">
-		<img src="imago/fblogo.png">
-		</a>
-		</div>
-		
-		<div class="logoii">
-		<a href="https://discordapp.com/users/569104248533418005">
-		<img src="imago/dclogo.png">
-		</a>
-		</div>
-		
-		 <div id="datetime"></div>
+    <footer>
+        <div class="con">
+            <h2> Contact me </h3>
+        </div>
 
-			<script>
-				   function updateTime() {
-            
-            var now = new Date();
+        <div class="logo">
+            <a href="https://www.facebook.com/seanmarcus.maglaque/">
+                <img src="imago/fblogo.png">
+            </a>
+        </div>
 
-            
-            var hours = now.getHours();
-            var minutes = now.getMinutes();
-            var seconds = now.getSeconds();
+        <div class="logoii">
+            <a href="https://discordapp.com/users/569104248533418005">
+                <img src="imago/dclogo.png">
+            </a>
+        </div>
 
-            
-            var day = now.getDate();
-            var month = now.getMonth(); 
-            var year = now.getFullYear();
-            var dayOfWeek = now.getDay(); 
+        <div id="datetime"></div>
 
-            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        <script>
+            function updateTime() {
 
-            
-            var monthName = months[month];
-            var dayName = daysOfWeek[dayOfWeek];
+                var now = new Date();
 
-          
-            hours = (hours < 10 ? "0" : "") + hours;
-            minutes = (minutes < 10 ? "0" : "") + minutes;
-            seconds = (seconds < 10 ? "0" : "") + seconds;
-            day = (day < 10 ? "0" : "") + day;
 
-            
-            var dateTimeString = dayName + ", " + day + " " + monthName + " " + year + " " + hours + ":" + minutes + ":" + seconds;
-            document.getElementById("datetime").innerHTML = dateTimeString;
-        }
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
 
-        
-        setInterval(updateTime, 1000);
 
-        
-        updateTime();
-    </script>
-		
-	
-	</footer>
-	
-	</body>
-	</html>
+                var day = now.getDate();
+                var month = now.getMonth();
+                var year = now.getFullYear();
+                var dayOfWeek = now.getDay();
+
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
+                var monthName = months[month];
+                var dayName = daysOfWeek[dayOfWeek];
+
+
+                hours = (hours < 10 ? "0" : "") + hours;
+                minutes = (minutes < 10 ? "0" : "") + minutes;
+                seconds = (seconds < 10 ? "0" : "") + seconds;
+                day = (day < 10 ? "0" : "") + day;
+
+
+                var dateTimeString = dayName + ", " + day + " " + monthName + " " + year + " " + hours + ":" + minutes + ":" + seconds;
+                document.getElementById("datetime").innerHTML = dateTimeString;
+            }
+
+
+            setInterval(updateTime, 1000);
+
+
+            updateTime();
+        </script>
+
+
+    </footer>
+
+</body>
+
+</html>

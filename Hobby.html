@@ -20,6 +20,8 @@
       color: #00FD26;
       text-align: left;
       margin-left: 20px; 
+	  margin-top: 100px;
+	  
     }
 
     #pic {
@@ -46,9 +48,9 @@
  
 <body>
 
-	<a href="vestibulum.html" class="ret">
+	 <a href="vestibulum.html" class="ret">
 		<h3><--- RETURN </h3>
-	</a>
+	 </a>
 	
 	  
 		<a href="congeries.html" class="gal" id="galleryLink">
@@ -56,7 +58,7 @@
 		</a>
 		
 	<script>
-	// Boleean logic//
+	
 	var isGalleryLinkClicked = false;
 
 	document.getElementById('galleryLink').addEventListener('click', function(event) {
@@ -66,12 +68,12 @@
 
 	function redirectToGallery(event) {
     if (!isGalleryLinkClicked) {
-        event.preventDefault(); // Prevent the default action of the link
+        event.preventDefault(); 
     } else {
-        // Link was clicked, proceed to gallery.html
+     
     }
 	}
-	// Define the profile object
+
 var profile = {
   codename: "ODIN",
   status: "ACTIVE",
@@ -87,7 +89,7 @@ var profile = {
   ]
 };
 
-// Function to display profile information
+// OBJECT //
 function displayProfile() {
   var profileText = "";
   profileText += "CODENAME: " + profile.codename + "\n";
@@ -104,11 +106,11 @@ function displayProfile() {
     profileText += "~ " + operation + "\n";
   });
 
-  // Log the profile text to the console
+
   console.log(profileText);
 }
 
-// Call the displayProfile function
+
 displayProfile();
 
 	</script>
@@ -119,22 +121,33 @@ displayProfile();
     <h3>
       <pre id="profileText">
 
-      CODENAME: ODIN
-      STATUS: ACTIVE
-      AFFILIATION/TEAM: VIPER OPERATIONS GROUP [V.O.G]
-      RANK: ADJUTANT LEADER
-      CLASS: MARKSMAN & ASSAULTER
-	  
-      WEAPONS: 
-      - COLT ARMORY M16A4
-      - ZENTICO ARMS. INTEGRAL SUPPRESSED AK-47
+	 CODENAME: ODIN
+	 STATUS: ACTIVE
+	 AFFILIATION/TEAM: VIPER OPERATIONS GROUP [V.O.G]
+	 RANK: ADJUTANT LEADER
+	 CLASS: MARKSMAN & ASSAULTER
+		  
+	 WEAPONS: 
+	 - COLT ARMORY M16A4
+	 - ZENTICO ARMS. INTEGRAL SUPPRESSED AK-47
 
-      OPERATIONS:
-      ~AMBUSH TACTICS TRAINING
-      ~HIGH VALUED TARGET RESCUE MISSION
-      ~12 KM14 SITE TRAINING
-      ~ROOM CLEARING TRAINING
-    </h3>
+	 OPERATIONS HISTORY:
+	 ~AMBUSH TACTICS TRAINING
+	 ~HIGH VALUED TARGET RESCUE MISSION
+	 ~ROOM CLEARING TRAINING
+	 ~KM14 SITE TRAINING
+	 ~SKIRMISH TRAINING
+	 ~FORCE ON FORCE TRAINING
+	 ~BOMB DEFUSAL TRAINING
+	 ~SITE DEFENSE TRAINING
+	 ~PARAMTER DEFENSE TRAINING
+	 ~PARAMETER DEFENSE TRAINING
+	 ~PARAMTER ASSAULT TRAINING
+	 ~TACTICAL ASSAULT TRAINING
+	 ~TACTICAL IN-DEPTH ASSAULT TRAINING
+	 ~WAREHOUSE ASSAULT TRAINING
+	 ~SEMI-URBAN ASSAULT AND DEFENSE TAINING
+		</h3>
   </div>
    <script>
     
